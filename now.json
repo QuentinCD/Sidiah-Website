@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "Sidiah-Website",
-  "build": [
+  "builds": [
     {
       "src": "package.json",
       "use": "@now/static-build"
