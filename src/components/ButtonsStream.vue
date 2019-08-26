@@ -17,6 +17,6 @@ export default { name: "ButtonsStream" };
 
 <style>
 a:active {
-  color: #fff;
+  color: red;
 }
 </style>
