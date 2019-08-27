@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Nav />
     <div id="content">
       <TitrePage title="Viens discuter sur mon live !" />
       <StreamEtChat />
@@ -29,13 +30,15 @@ import ButtonsStream from "@/components/ButtonsStream.vue";
 import StreamEtChat from "@/components/StreamEtChat.vue";
 import TitrePage from "@/components/TitrePage.vue";
 import Footer from "@/components/Footer.vue";
+import Nav from "@/components/Nav.vue";
 
 export default {
   components: {
     ButtonsStream,
     StreamEtChat,
     TitrePage,
-    Footer
+    Footer,
+    Nav
   },
   data: {
     window: {

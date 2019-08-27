@@ -6,7 +6,7 @@
     </div>
     <div class="buttons">
       <img src="../assets/coffee.png" />
-      <a targer="_blank" href="https://streamlabs.com/sidiahtv">Offre moi un café !</a>
+      <a target="_blank" href="https://streamlabs.com/sidiahtv">Offre moi un café !</a>
     </div>
   </div>
 </template>
@@ -15,12 +15,12 @@
 export default { name: "ButtonsStream" };
 </script>
 
-<style>
+<style scoped>
 a {
   color: #fff;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 </style>
