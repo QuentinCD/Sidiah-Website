@@ -17,7 +17,7 @@
         src="https://www.twitch.tv/embed/sidiahtv/chat?darkpopout"
         scrolling="none"
         class="active"
-        width="340"
+        width="310"
         height="100%"
         frameborder="0"
       ></iframe>

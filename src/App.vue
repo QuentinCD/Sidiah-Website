@@ -38,7 +38,9 @@ footer {
   font-size: 30px;
   line-height: 0;
 }
-.logo {
+.logo,
+.logo_r,
+.logo_l {
   display: flex;
   width: 40px;
   height: 40px;
@@ -49,6 +51,13 @@ footer {
   justify-content: center;
   align-items: center;
   border: 1px white solid;
+}
+.logo_l {
+  margin-left: 0px;
+  border: none;
+}
+.logo_r {
+  margin-right: 0px;
 }
 .logo img {
   width: 30px;
