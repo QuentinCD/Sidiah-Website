@@ -16,7 +16,8 @@ export default { name: "ButtonsStream" };
 </script>
 
 <style>
-a:active {
-  color: red;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 </style>
