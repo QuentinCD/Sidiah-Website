@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/stream">Stream</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -14,8 +10,6 @@ body {
   font-family: "Forte", serif;
   margin: 0;
   padding: 0;
-  /*background-color: #0a0a71;
-    opacity: 0.5;*/
   background-image: url("assets/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
