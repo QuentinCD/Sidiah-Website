@@ -13,10 +13,8 @@
     <div v-if="windowWidth > 1380" id="chat">
       <iframe
         defer
-        id="if-chat"
         src="https://www.twitch.tv/embed/sidiahtv/chat?darkpopout"
         scrolling="none"
-        class="active"
         width="310"
         height="100%"
         frameborder="0"

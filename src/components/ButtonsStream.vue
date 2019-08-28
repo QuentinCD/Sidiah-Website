@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-50 just-sb">
+  <div class="flex w-50 just-sb f-wrap">
     <div class="buttons">
       <img src="../assets/discord.png" />
       <a target="_blank" href="https://discord.gg/G9cegnv">Rejoins mon discord</a>

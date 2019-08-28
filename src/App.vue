@@ -75,6 +75,9 @@ h1 {
   width: 100%;
   height: 700px;
 }
+#streamM {
+  height: 400px;
+}
 #flux {
   width: 100%;
 }
@@ -85,6 +88,9 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.f-wrap {
+  flex-wrap: wrap;
 }
 .mr-10 {
   margin-right: 10%;

@@ -2,8 +2,9 @@
   <div>
     <Nav />
     <div id="content">
-      <TitrePage title="Viens discuter sur mon live !" />
-      <StreamEtChat />
+      <TitrePage v-if="windowWidth > 768" title="Viens discuter sur mon live !" />
+      <StreamEtChat v-if="windowWidth > 768" />
+      <StreamMobile v-else />
       <div class="more">
         <div class="a-propos">
           <p>À propos</p>
@@ -28,6 +29,7 @@
 <script>
 import ButtonsStream from "@/components/ButtonsStream.vue";
 import StreamEtChat from "@/components/StreamEtChat.vue";
+import StreamMobile from "@/components/StreamMobile.vue";
 import TitrePage from "@/components/TitrePage.vue";
 import Footer from "@/components/Footer.vue";
 import Nav from "@/components/Nav.vue";
@@ -36,26 +38,20 @@ export default {
   components: {
     ButtonsStream,
     StreamEtChat,
+    StreamMobile,
     TitrePage,
     Footer,
     Nav
   },
-  data: {
-    window: {
-      width: 0
-    }
+  data: function() {
+    return { windowWidth: window.innerWidth };
   },
-  created() {
-    window.addEventListener("resize", this.handleResize);
-    this.handleResize();
-  },
-  destroyed() {
-    window.removeEventListener("resize", this.handleResize);
-  },
-  methods: {
-    handleResize() {
-      this.window.width = window.innerWidth;
-    }
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener("resize", () => {
+        this.windowWidth = window.innerWidth;
+      });
+    });
   }
 };
 </script>
